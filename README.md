@@ -1,5 +1,6 @@
 # superbro
-Very minimalistic boilerplate to start the most simplest projects.
+Very minimalistic boilerplate to start the most simplest projects. 
+Made in mind of mobile-first orientation.
 
 ### Features
 - Basic reset
