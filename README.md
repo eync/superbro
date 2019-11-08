@@ -9,3 +9,5 @@ Made in mind of mobile-first orientation.
 - Clean typography
 - More to come!
 
+### Todo
+- Make it Viewport supported
