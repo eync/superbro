@@ -10,4 +10,4 @@ Made in mind of mobile-first orientation.
 - More to come!
 
 ### Todo
-- Make it Viewport supported
+- Viewport support
