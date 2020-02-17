@@ -12,3 +12,4 @@ Made in mind of mobile-first orientation.
 ### Todo
 - Viewport support
 - make it Grid compatible with VH/VWs
+- Using var's to make easy col and minmax system for templating
