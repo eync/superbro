@@ -16,19 +16,19 @@ iframe { border: 0; }
 
 /* ::--:Span e.g. how much space each "item" will take
 ================================================== */
-.span0 {  }
-.span1 {  }
-.span2 {  }
-.span3 {  }
-.span4 {  }
-.span5 {  }
-.span6 {  }
-.span7 {  }
-.span8 {  }
-.span9 {  }
-.span10 {  }
-.span11 {  }
-.span12 {  }
+.span0 {  grid-column: span0 ; width:100%;   }
+.span1 {  grid-column: span1 ; width:100%;   }
+.span2 {  grid-column: span2 ; width:100%;   }
+.span3 {  grid-column: span3 ; width:100%;   }
+.span4 {  grid-column: span4 ; width:100%;   }
+.span5 {  grid-column: span5 ; width:100%;   }
+.span6 {  grid-column: span6 ; width:100%;   }
+.span7 {  grid-column: span7 ; width:100%;   }
+.span8 {  grid-column: span8 ; width:100%;   }
+.span9 {  grid-column: span9 ; width:100%;   }
+.span10 { grid-column: span10; width:100%;     }
+.span11 { grid-column: span11; width:100%;     }
+.span12 { grid-column: span12; width:100%;     }
 
 /* ::::Typography
 ================================================== */
