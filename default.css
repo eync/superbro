@@ -16,19 +16,19 @@ iframe { border: 0; }
 
 /* ::--:Span e.g. how much space each "item" will take
 ================================================== */
-.span0 {  grid-column: span 0 ; width:100%;   }
-.span1 {  grid-column: span 1 ; width:100%;   }
-.span2 {  grid-column: span 2 ; width:100%;   }
-.span3 {  grid-column: span 3 ; width:100%;   }
-.span4 {  grid-column: span 4 ; width:100%;   }
-.span5 {  grid-column: span 5 ; width:100%;   }
-.span6 {  grid-column: span 6 ; width:100%;   }
-.span7 {  grid-column: span 7 ; width:100%;   }
-.span8 {  grid-column: span 8 ; width:100%;   }
-.span9 {  grid-column: span 9 ; width:100%;   }
-.span10 { grid-column: span 10; width:100%;     }
-.span11 { grid-column: span 11; width:100%;     }
-.span12 { grid-column: span 12; width:100%;     }
+.span0 {  grid-column: span 0 ; width: 100%;   }
+.span1 {  grid-column: span 1 ; width: 100%;   }
+.span2 {  grid-column: span 2 ; width: 100%;   }
+.span3 {  grid-column: span 3 ; width: 100%;   }
+.span4 {  grid-column: span 4 ; width: 100%;   }
+.span5 {  grid-column: span 5 ; width: 100%;   }
+.span6 {  grid-column: span 6 ; width: 100%;   }
+.span7 {  grid-column: span 7 ; width: 100%;   }
+.span8 {  grid-column: span 8 ; width: 100%;   }
+.span9 {  grid-column: span 9 ; width: 100%;   }
+.span10 { grid-column: span 10; width: 100%;     }
+.span11 { grid-column: span 11; width: 100%;     }
+.span12 { grid-column: span 12; width: 100%;     }
 
 /* ::::Typography
 ================================================== */
