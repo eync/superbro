@@ -7,8 +7,8 @@ Made in mind of mobile-first orientation.
 - Basic reset
 - Responsive grid
 - Clean typography
-- make it Grid compatible with VH/VWs
 - More to come!
 
 ### Todo
 - Viewport support
+- make it Grid compatible with VH/VWs
