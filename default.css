@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
 /* ::::CSS Reset 
 ================================================== */
 iframe { border: 0; }
@@ -12,7 +14,8 @@ iframe { border: 0; }
 	}
 		
 	body {
-		line-height: 1; 
+		line-height: 1em; 
+		font-family: 'Noto Sans', sans-serif;
 	}
 	ol, ul {
 		list-style: none; 
@@ -24,32 +27,66 @@ iframe { border: 0; }
 
 }
 
-.grid { display: grid; grid-template-columns: repeat(var(--clmns, 12), minmax(0, 1fr));}
+.grid {grid-gap:10px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-column: span 12 ;}
 
 .item {
-	border:1px solid black;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
+
+.example .item {
+	color: var(--abg);
+	background: #EEE;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    height: 30px;
+    line-height: 30px;
+    font-weight: 600;
+	letter-spacing: .1rem;
+	
+}
+
+
  
 /* ::--:Span e.g. how much space each "item" will take
 ================================================== */
-.span0 {  grid-column: span 0 ; width: 100%;   }
-.span1 {  grid-column: span 1 ; width: 100%;   }
-.span2 {  grid-column: span 2 ; width: 100%;   }
-.span3 {  grid-column: span 3 ; width: 100%;   }
-.span4 {  grid-column: span 4 ; width: 100%;   }
-.span5 {  grid-column: span 5 ; width: 100%;   }
-.span6 {  grid-column: span 6 ; width: 100%;   }
-.span7 {  grid-column: span 7 ; width: 100%;   }
-.span8 {  grid-column: span 8 ; width: 100%;   }
-.span9 {  grid-column: span 9 ; width: 100%;   }
-.span10 { grid-column: span 10; width: 100%;     }
-.span11 { grid-column: span 11; width: 100%;     }
-.span12 { grid-column: span 12; width: 100%;     }
+@media (min-width: 420px) {
+	.span1 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+	.span2 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+	.span3 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+	.span4 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+	.span5 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+	.span6 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+	.span7 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+	.span8 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+	.span9 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+	.span10 { grid-column: span 12; grid-row: span 1; width: 100%;     }
+	.span11 { grid-column: span 12; grid-row: span 1; width: 100%;     }
+	.span12 { grid-column: span 12; grid-row: span 1; width: 100%;     }
+	}
+@media (min-width: 750px) {
+.span0 {  grid-column: span 0 ; grid-row: span 1; width: 100%;   }
+.span1 {  grid-column: span 1 ; grid-row: span 1; width: 100%;   }
+.span2 {  grid-column: span 2 ; grid-row: span 1; width: 100%;   }
+.span3 {  grid-column: span 3 ; grid-row: span 1; width: 100%;   }
+.span4 {  grid-column: span 4 ; grid-row: span 1; width: 100%;   }
+.span5 {  grid-column: span 5 ; grid-row: span 1; width: 100%;   }
+.span6 {  grid-column: span 6 ; grid-row: span 1; width: 100%;   }
+.span7 {  grid-column: span 7 ; grid-row: span 1; width: 100%;   }
+.span8 {  grid-column: span 8 ; grid-row: span 1; width: 100%;   }
+.span9 {  grid-column: span 9 ; grid-row: span 1; width: 100%;   }
+.span10 { grid-column: span 10; grid-row: span 1; width: 100%;     }
+.span11 { grid-column: span 11; grid-row: span 1; width: 100%;     }
+.span12 { grid-column: span 12; grid-row: span 1; width: 100%;     }
+}
 
-.center-items { display:grid; justify-items: center;align-items: center;}
+
+
+.center-items { display:grid;  justify-items: center;align-items: center;}
+.center-itemss { display:grid;  justify-self: center;align-items: center;}
 .left-items { display:grid; justify-items: left;align-items: left;}
-.right-items { display:grid; justify-items: right;align-items: right;}
+.right-items {  display:grid; justify-items: right;align-items: right;}
 
 /* ::::Typography
 ================================================== */
