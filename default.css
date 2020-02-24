@@ -11,8 +11,10 @@ iframe { border: 0; }
 .grid { display: grid; grid-template-columns: repeat(var(--clmns, 12), minmax(0, 1fr));}
 
 .item {
+	border:1px solid black;
+	text-transform: uppercase;
 }
-
+ 
 /* ::--:Span e.g. how much space each "item" will take
 ================================================== */
 .span0 {  grid-column: span 0 ; width: 100%;   }
@@ -28,6 +30,10 @@ iframe { border: 0; }
 .span10 { grid-column: span 10; width: 100%;     }
 .span11 { grid-column: span 11; width: 100%;     }
 .span12 { grid-column: span 12; width: 100%;     }
+
+.center-items { display:grid; justify-items: center;align-items: center;}
+.left-items { display:grid; justify-items: left;align-items: left;}
+.right-items { display:grid; justify-items: right;align-items: right;}
 
 /* ::::Typography
 ================================================== */
