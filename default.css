@@ -112,7 +112,7 @@ code {
 	.span11 { grid-column: span 12; grid-row: span 1; width: 100%;     }
 	.span12 { grid-column: span 12; grid-row: span 1; width: 100%;     }
 	}
-@media (min-width: 750px) {
+@media (min-width: 960px) {
 .span0 {  grid-column: span 0 ; grid-row: span 1; width: 100%;   }
 .span1 {  grid-column: span 1 ; grid-row: span 1; width: 100%;   }
 .span2 {  grid-column: span 2 ; grid-row: span 1; width: 100%;   }
