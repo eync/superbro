@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
 
 /* ::::CSS Reset 
@@ -16,7 +16,7 @@ iframe { border: 0; }
 		
 	body {
 		line-height: 1em; 
-		font-family: 'Noto Sans', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 	}
 	ol, ul {
 		list-style: none; 
@@ -39,7 +39,7 @@ code {
 	font-family: 'Source Code Pro';
 }
 .base {
-	font-weight:400;
+	font-weight:300;
 	letter-spacing: 0.1px;
 }
 
@@ -58,7 +58,7 @@ code {
     text-transform: uppercase;
     height: 30px;
     line-height: 30px;
-    font-weight: 600;
+    font-weight: 700;
 	letter-spacing: .1rem;
 	
 }
@@ -74,7 +74,7 @@ code {
     font-size: 1rem;
     text-transform: uppercase;
 	margin-top: 50px;
-	font-weight: 600;
+	font-weight: 700;
 	padding:10px 0 10px;
 	letter-spacing: .1rem;
 	
