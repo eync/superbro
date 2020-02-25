@@ -51,11 +51,22 @@
     	border-color: var(--white);
     	outline: 0;
 	}
+	@media (min-width: 250px) {
+		.logo {
+			text-align:center;
+			line-height: 50px;
+			letter-spacing: -.1rem;
+			font-size:28px;color: var(--yellow);
+			/* Dirty fix for smaller screens */
+		}
+	}
 	@media (min-width: 420px) {
 		.logo {
 			text-align:center;
 			line-height: 50px;
 			letter-spacing: -.1rem;
+			font-size: calc(48px + var(--sized));
+			
 		}
 	}
 	@media (min-width: 750px) {
@@ -63,6 +74,7 @@
 			text-align:center;
 			line-height: 10px;
 			letter-spacing: -.1rem;
+			font-size: calc(48px + var(--sized));
 		}
 	}
 	.logo {
@@ -95,7 +107,6 @@
 
 	h1 {
 		font-size: calc(48px + var(--sized));
-		color: var(--yellow);
 		padding:10px;
 	}
 	h2 {
