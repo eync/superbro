@@ -12,7 +12,13 @@
 		--alink: #ED217C; 
 		--yellow: #fdca40; 
 		--abg: hsl(200, 98%, 18%);
-		--sized: 0.5vh;
+		--sized: 0.5vh;	 	 	 	 	 	 
+		--h1: 48px;
+		--h2: 40px;
+		--h3: 31px;
+		--h4: 25px;
+		--h5: 20px;
+		--h6: 16px;
 	}
 /*	&& BASIC
 	=======================*/	
@@ -81,8 +87,13 @@
 		text-align:center;
 		line-height: 50px;
 		letter-spacing: -.1rem;
+		padding:10px;
+		
 	}
-	
+	.title h2 {
+		margin-top:20px;
+		padding-top:20px;
+	}
 	.slogan {
 		line-height:30px;
 		text-align:center;
@@ -107,12 +118,9 @@
 
 	h1 {
 		font-size: calc(48px + var(--sized));
-		padding:10px;
 	}
 	h2 {
 		font-size: calc(40px + var(--sized));
-		margin-top:20px;
-		padding-top:20px;
 	}
 	h3 {
 		font-size: calc(31px + var(--sized));
