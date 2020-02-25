@@ -24,7 +24,7 @@ iframe { border: 0; }
 /* ::::BASE Styles
 ================================================== */
 .base {
-	font-size:16px;
+	font-size:2.03vh;
 	font-weight:400;
 	letter-spacing: 0.1px;
 }
@@ -32,7 +32,7 @@ iframe { border: 0; }
 .grid {grid-gap:10px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-column: span 12 ;}
 
 .item {
-	text-transform: capitalize;
+	text-transform: none;
 }
 
 .example .item {
@@ -61,7 +61,7 @@ iframe { border: 0; }
     text-transform: uppercase;
 	margin-top: 50px;
 	font-weight: 600;
-	
+	padding:10px 0 10px;
 	letter-spacing: .1rem;
 	
 }
