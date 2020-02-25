@@ -11,6 +11,7 @@
 		--purple: #771a89; 
 		--yellow: #fdca40; 
 		--abg: hsl(200, 98%, 18%);
+		--sized: 0.5vh;
 	}
 /*	&& BASIC
 	=======================*/	
@@ -81,33 +82,37 @@
 <h5>		20px / 2
 <h6>		16px / 2
 */
+/* 16px / 2 */
+	body {
+		font-size: calc(16px + var(--sized));
+	}
 	h1, h2, h3, h4, h5 {
 		text-transform: capitalize;
 	}
 
 	h1 {
-		font-size: calc(24px + 1.5vw);
+		font-size: calc(48px + var(--sized));
 		color: var(--yellow);
 		padding:10px;
 	}
 	h2 {
-		font-size: calc(20px + 1.5vw);
+		font-size: calc(40px + var(--sized));
 		margin-top:20px;
 		padding-top:20px;
 	}
 	h3 {
-		font-size: calc(15.5px + 1.5vw);
+		font-size: calc(31px + var(--sized));
 	}
 
 	h4 {
-		font-size: calc(12.5px + 1.5vw);
+		font-size: calc(25px + var(--sized));
 	}
 
 	h5 {
-		font-size: calc(10px + 1.5vw);
+		font-size: calc(20px + var(--sized));
 	}
 	h6 {
-		font-size: calc(8px + 1.5vw);
+		font-size: calc(16px + var(--sized));
 	}
 	
 	.base {
