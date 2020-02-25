@@ -140,5 +140,5 @@ code {
 
 /* ::::Links
 ================================================== */
-	a { color: #333; text-decoration: underline; outline: 0; }
+	a { color: var(--alink); text-decoration: underline; outline: 0;font-weight:500; }
 	a:hover, a:focus { color: #000; }

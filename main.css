@@ -9,7 +9,7 @@
 		--greywhite: #b3b3b3;
 		--codebox: #c0c0c073;
 		--black: #03191E;
-		--purple: #771a89; 
+		--alink: #ED217C; 
 		--yellow: #fdca40; 
 		--abg: hsl(200, 98%, 18%);
 		--sized: 0.5vh;
@@ -125,6 +125,11 @@
 		margin: 0 1em;
 		padding: 2em 5em;
 
+	}
+	ul li {
+		padding-left:30px;
+		list-style-type: square;
+		list-style-position: inside;
 	}
 	
 	
