@@ -48,14 +48,29 @@
     	border-color: var(--white);
     	outline: 0;
 	}
+	@media (min-width: 420px) {
+		.logo {
+			text-align:center;
+			line-height: 50px;
+			letter-spacing: -.1rem;
+		}
+	}
+	@media (min-width: 750px) {
+		.logo {
+			text-align:center;
+			line-height: 10px;
+			letter-spacing: -.1rem;
+		}
+	}
 	.logo {
 		text-align:center;
-		line-height: 1.25;
+		line-height: 50px;
 		letter-spacing: -.1rem;
 	}
 	
 	.slogan {
 		line-height:30px;
+		text-align:center;
 	}
 /*	&& BASIC TYPOGRAPHY
 	=======================*/

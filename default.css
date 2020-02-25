@@ -24,7 +24,9 @@ iframe { border: 0; }
 /* ::::BASE Styles
 ================================================== */
 .base {
-
+	font-size:16px;
+	font-weight:400;
+	letter-spacing: 0.1px;
 }
 
 .grid {grid-gap:10px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-column: span 12 ;}
@@ -46,6 +48,24 @@ iframe { border: 0; }
 	letter-spacing: .1rem;
 	
 }
+.imgimg {
+	width:20%;
+	margin-top:10px;
+}
+.introductions .item {
+	color: var(--abg);
+	background: #EEE;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-transform: uppercase;
+	margin-top: 50px;
+	font-weight: 600;
+	
+	letter-spacing: .1rem;
+	
+}
+
 
 
  
