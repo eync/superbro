@@ -71,6 +71,19 @@ iframe { border: 0; }
  
 /* ::--:Span e.g. how much space each "item" will take
 ================================================== */
+.span1 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+.span2 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+.span3 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+.span4 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+.span5 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+.span6 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+.span7 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+.span8 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+.span9 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
+.span10 { grid-column: span 12; grid-row: span 1; width: 100%;     }
+.span11 { grid-column: span 12; grid-row: span 1; width: 100%;     }
+.span12 { grid-column: span 12; grid-row: span 1; width: 100%;     }
+
 @media (min-width: 420px) {
 	.span1 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }
 	.span2 {  grid-column: span 12 ; grid-row: span 1; width: 100%;   }

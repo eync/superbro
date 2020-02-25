@@ -74,40 +74,40 @@
 	}
 /*	&& BASIC TYPOGRAPHY
 	=======================
-<h1>		48px
-<h2>		40px
-<h3>		31px
-<h4>		25px
-<h5>		20px
-<h6>		16px
+<h1>		48px / 2
+<h2>		40px / 2
+<h3>		31px / 2
+<h4>		25px / 2
+<h5>		20px / 2
+<h6>		16px / 2
 */
 	h1, h2, h3, h4, h5 {
 		text-transform: capitalize;
 	}
 
 	h1 {
-		font-size: 6.09vh;
+		font-size: calc(24px + 1.5vw);
 		color: var(--yellow);
 		padding:10px;
 	}
 	h2 {
-		font-size: 5.08vh;
+		font-size: calc(20px + 1.5vw);
 		margin-top:20px;
 		padding-top:20px;
 	}
 	h3 {
-		font-size: 3.93vh;
+		font-size: calc(15.5px + 1.5vw);
 	}
 
 	h4 {
-		font-size: 3.17vh;
+		font-size: calc(12.5px + 1.5vw);
 	}
 
 	h5 {
-		font-size: 2.54vh;
+		font-size: calc(10px + 1.5vw);
 	}
 	h6 {
-		font-size: 2.03vh;
+		font-size: calc(8px + 1.5vw);
 	}
 	
 	.base {
