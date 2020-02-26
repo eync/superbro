@@ -11,6 +11,7 @@
 		--black: #03191E;
 		--alink: #ED217C; 
 		--yellow: #fdca40; 
+		--bqg: #bbbbbb;
 		--abg: hsl(200, 98%, 18%);
 		--sized: 0.5vh;	 	 	 	 	 	 
 		--h1: 48px;
@@ -19,6 +20,7 @@
 		--h4: 25px;
 		--h5: 20px;
 		--h6: 16px;
+		--quotetextsize: 12px;
 	}
 /*	&& BASIC
 	=======================*/	
@@ -149,6 +151,31 @@
 		padding-left:30px;
 		list-style-type: square;
 		list-style-position: inside;
+	}
+	
+	#first {
+		font-size:calc(var(--h1) - 65%); 
+		border: 1px solid var(--codebox);background: var(--codebox);
+	}
+	#second {
+		font-size:calc(var(--h2) - 60%); 
+		border: 1px solid var(--codebox);background: var(--codebox);
+	}
+	#third {
+		font-size:calc(var(--h3) - 50%); 
+		border: 1px solid var(--codebox);background: var(--codebox);
+	}
+	#fourth {
+		font-size:calc(var(--h4) - 40%); 
+		border: 1px solid var(--codebox);background: var(--codebox);
+	}
+	#fifth {
+		font-size:calc(var(--h5) - 40%); 
+		border: 1px solid var(--codebox);background: var(--codebox);
+	}
+	#sixth {
+		font-size:calc(var(--h6) - 40%); 
+		border: 1px solid var(--codebox);background: var(--codebox);
 	}
 	
 	

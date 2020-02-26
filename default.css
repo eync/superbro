@@ -43,7 +43,7 @@ code {
 	letter-spacing: 0.1px;
 }
 
-.grid {grid-gap:10px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-column: span 12 ;}
+.grid {grid-gap:15px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-column: span 12 ;margin-top:20px;}
 
 .item {
 	text-transform: none;
@@ -137,7 +137,45 @@ code {
 
 /* ::::Typography
 ================================================== */
-
+	strong {
+		font-weight:700;
+	}
+	blockquote {
+		margin: 0;
+	}
+	
+	blockquote p {
+		padding: 15px;
+		background: var(--bqg);
+		border-radius: 5px;
+		color: var(--black);
+		font-size: var(--h6);
+		font-family: 'Source Code Pro';
+	}
+	blockquote cite {
+		color: var(--white);
+		font-style: italic;
+		font-family: 'Source Code Pro';
+	}
+	blockquote footer {
+		padding: 1px 10px;
+		font-size: var(--quotetextsize);
+		color: var(--white);
+		font-family: 'Source Code Pro';
+	}
+	
+	blockquote p::before {
+		content: '\201C  ';
+		font-size: var(--h5);
+	}
+	
+	blockquote p::after {
+		content: '  \201D';
+		font-size: var(--h5);
+	}
+	blockquote cite::before {
+		content: ', ';
+	}
 /* ::::Links
 ================================================== */
 	a { color: var(--alink); text-decoration: underline; outline: 0;font-weight:500; }
