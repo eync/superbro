@@ -179,4 +179,4 @@ code {
 /* ::::Links
 ================================================== */
 	a { color: var(--alink); text-decoration: underline; outline: 0;font-weight:500; }
-	a:hover, a:focus { color: #000; }
+	a:hover, a:focus { color: var(--black); }
