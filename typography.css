@@ -1,0 +1,122 @@
+/*	&& COLORS & SIZE SETTINGS 	
+	=======================*/
+	:root {
+        /* SITE BASIC SETTINGS */
+        --site-size: 75em; /* about 1200px */
+
+        /*	=======================  */
+        /* FONT(s) */
+        --font-main:'Montserrat', sans-serif;
+        --font-alt:'Source Code Pro';
+
+        /*	=======================  */
+        /* PRIMARY COLORS  */              
+		--greywhite: #b3b3b3;
+		--black: #03191E;
+		 
+		--yellow: #fdca40; 
+		--bqg: #b3b3b3;
+        --abg: hsl(200, 98%, 18%);
+        
+        --alink:#ED217C;
+        --alink-hover:rgb(250, 25, 126);
+        --alink-active:var(--alink);
+        --alink-visited:var(--alink);
+        /* SHADES */
+        --black: #1d1d21;
+        --gray-10: #2e2e31;
+        --gray-6: #7b7a7d;
+        --gray-4: #a5a5a6;
+        --gray-3: #bbbbbc;
+        --gray-2: #d1d0d2;
+        --gray-1: #e8e7e8;
+        --white: #e6e8e6;
+        /* STATUS COLOR(s) */
+        --color-success: #88c459;
+        --color-error: #f5414f;
+        --color-warning: #ffd137;
+        /* FONT COLOR(s) */
+
+        /* BORDER COLOR(s) */
+
+        /* BODY */
+
+        /* BUTTON COLORS */
+        --primary-button:var(--white); --primary-button-bg:transparent; --primary-button-bdr:var(--greywhite); 
+
+        --a-button:var(--primary-button);--a-button-bg:var(--primary-button-bg);--a-button-bdr:var(--primary-button-bdr);
+        /* Alternative buttons */
+        --button-1:; --button-1-bg:; --button-1-bdr:;
+        --button-2:;
+        --button-3:;
+        --button-4:;
+
+
+        /* COMPONENT COLORS */
+        --quote-background:;
+        --code-background:#c0c0c073;
+        --codebox: #c0c0c073;
+
+        /*	=======================  */
+        /* TEXT / FONTS SETTINGS  */
+        --text-base-value:1em;
+        --text-scale-value: 0.5vh;
+	 	 	 	 	 
+		--h1: 3em;
+		--h2: 2.5em;
+		--h3: 1.938em;
+		--h4: 1.563em;
+		--h5: 1.250em;
+		--h6: 1em;
+        --quotetextsize: 12px;
+        
+        /* line-height */
+        --heading-line-height: 2;
+        --body-line-height: 1.4;
+    }
+    
+/*	&& HEADERS 
+	=======================
+<h1>		48px / 2
+<h2>		40px / 2
+<h3>		31px / 2
+<h4>		25px / 2
+<h5>		20px / 2
+<h6>		16px / 2
+*/
+/* 16px / 2 */
+h1, h2, h3, h4, h5, h6 {
+    text-transform: capitalize;
+    font-weight:700;
+    line-height: var(--heading-line-height);
+}
+
+h1 {
+    font-size: calc(var(--h1) + var(--text-scale-value));
+}
+h2 {
+    font-size: calc(var(--h2) + var(--text-scale-value));
+}
+h3 {
+    font-size: calc(var(--h3) + var(--text-scale-value));
+}
+
+h4 {
+    font-size: calc(var(--h4) + var(--text-scale-value));
+}
+
+h5 {
+    font-size: calc(var(--h5) + var(--text-scale-value));
+}
+h6 {
+    font-size: calc(var(--h6) + var(--text-scale-value));
+}
+
+
+em {
+font-style: italic;
+}
+
+strong {
+    font-weight:700;
+}

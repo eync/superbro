@@ -1,70 +1,16 @@
 /* 	!! Remember to place media queries around the module states not in any separate files !!
 	#######################*/
 
-/*	&& COLORS 	
-	=======================*/
-	:root {
-		
-		--white: #e6e8e6;
-		--greywhite: #b3b3b3;
-		--codebox: #c0c0c073;
-		--black: #03191E;
-		--alink: #ED217C; 
-		--yellow: #fdca40; 
-		--bqg: #bbbbbb;
-		--abg: hsl(200, 98%, 18%);
-		--sized: 0.5vh;	 	 	 	 	 	 
-		--h1: 48px;
-		--h2: 40px;
-		--h3: 31px;
-		--h4: 25px;
-		--h5: 20px;
-		--h6: 16px;
-		--quotetextsize: 12px;
-	}
 /*	&& BASIC
 	=======================*/	
-	body {
-		background: var(--abg);
-		color:var(--white);
-		line-height: 3.52em;
-	}
-	p {
-		line-height: 1.5em;
-		font-weight:300;
-	}
-	
-	.button {
-		display: inline-block;
-		height: 38px;
-		padding: 0 30px;
-		color: var(--white);
-		text-align: center;
-		font-size: 11px;
-		font-weight: 700;
-		line-height: 38px;
-		letter-spacing: .1rem;
-		text-transform: uppercase;
-		text-decoration: none;
-		white-space: nowrap;
-		background-color: transparent;
-		border-radius: 4px;
-		border: 1px solid var(--greywhite);
-		cursor: pointer;
-		box-sizing: border-box;
-	}
-
-	.button:hover {
-		color: var(--white);
-    	border-color: var(--white);
-    	outline: 0;
-	}
+	body {animation: fadeIn 1.5s linear 1s 1; -webkit-animation: fadeIn 1.5s linear 0s 1 alternate;}
+	p {font-weight:300;}
 	@media (min-width: 250px) {
 		.logo {
 			text-align:center;
 			line-height: 50px;
 			letter-spacing: -.1rem;
-			font-size:28px;color: var(--yellow);
+			color: var(--yellow);
 			/* Dirty fix for smaller screens */
 		}
 	}
@@ -73,7 +19,7 @@
 			text-align:center;
 			line-height: 50px;
 			letter-spacing: -.1rem;
-			font-size: calc(48px + var(--sized));
+			
 			
 		}
 	}
@@ -82,7 +28,7 @@
 			text-align:center;
 			line-height: 10px;
 			letter-spacing: -.1rem;
-			font-size: calc(48px + var(--sized));
+			
 		}
 	}
 	.logo {
@@ -100,45 +46,7 @@
 		line-height:30px;
 		text-align:center;
 	}
-/*	&& BASIC TYPOGRAPHY
-	=======================
-<h1>		48px / 2
-<h2>		40px / 2
-<h3>		31px / 2
-<h4>		25px / 2
-<h5>		20px / 2
-<h6>		16px / 2
-*/
-/* 16px / 2 */
-	body {
-		font-size: calc(16px + var(--sized));
-	}
-	h1, h2, h3, h4, h5, h6 {
-		text-transform: capitalize;
-		font-weight:700;
-	}
 
-	h1 {
-		font-size: calc(48px + var(--sized));
-	}
-	h2 {
-		font-size: calc(40px + var(--sized));
-	}
-	h3 {
-		font-size: calc(31px + var(--sized));
-	}
-
-	h4 {
-		font-size: calc(25px + var(--sized));
-	}
-
-	h5 {
-		font-size: calc(20px + var(--sized));
-	}
-	h6 {
-		font-size: calc(16px + var(--sized));
-	}
-	
 	.base {
 		display:grid;
 		justify-self: center;
@@ -155,29 +63,37 @@
 	}
 	
 	#first {
-		font-size:calc(var(--h1) - 65%); 
+		font-size:calc(3.3em - var(--h1)); 
 		border: 1px solid var(--codebox);background: var(--codebox);
 	}
 	#second {
-		font-size:calc(var(--h2) - 60%); 
+		font-size:calc(2.9em - var(--h2)); 
 		border: 1px solid var(--codebox);background: var(--codebox);
 	}
 	#third {
-		font-size:calc(var(--h3) - 50%); 
+		font-size:calc(2.3em - var(--h3)); 
 		border: 1px solid var(--codebox);background: var(--codebox);
 	}
 	#fourth {
-		font-size:calc(var(--h4) - 40%); 
+		font-size:calc(2em - var(--h4)); 
 		border: 1px solid var(--codebox);background: var(--codebox);
 	}
 	#fifth {
-		font-size:calc(var(--h5) - 40%); 
+		font-size:calc(1.8em - var(--h5)); 
 		border: 1px solid var(--codebox);background: var(--codebox);
 	}
 	#sixth {
-		font-size:calc(var(--h6) - 40%); 
+		font-size:calc(1.5em - var(--h6)); 
 		border: 1px solid var(--codebox);background: var(--codebox);
 	}
+
+/*	&& UTILITIES
+	All the dirty fixes and helpful classes here.
+	=======================*/	
+	.u-full-width {
+		width: 100%;}
+	h1.fixxxs, h2.fixxxs, h3.fixxxs {line-height:0.7em;}
+	h1.fixxxs > span, h2.fixxxs > span {  content: ""; clear: both; }
 	
 	
 /*	&& MOBILE FIRST
@@ -194,3 +110,150 @@
 	@media (min-width: 1000px) {}
 	/* Grid becomes active when larger than HD desktop */
 	@media (min-width: 1200px) {}
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+
+	/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+th {font-weight:700;}
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+
+ul.menu  {
+    list-style-type: none;
+	margin: 50px auto;
+	padding:10px 0 10px;
+	background: var(--white);
+	text-align: center;
+	color: var(--abg);
+    border-radius: 4px;
+    text-transform: uppercase;
+	margin-top: 50px;
+	letter-spacing: .1rem;
+  }
+ul.menu > li > a {color: var(--abg);font-weight: 700;font-size: 1rem;text-decoration:none;}
+ul.menu > li {
+    display: inline;
+    padding:1em;
+}
+
+ul.features {
+	margin:0;
+}
+
+ul.features > li {
+	list-style-type: none;
+	padding:0 1em;
+}
+
+
+
+
+span.colorcycle {
+	animation: colorchange 8s linear 1s infinite; /* animation-name followed by duration in seconds*/
+	   /* you could also use milliseconds (ms) or something like 2.5s */
+	-webkit-animation: colorchange 8s linear 0s infinite alternate; /* Chrome and Safari */
+  }
+
+  @keyframes colorchange
+  {
+	0%   {color:var(--white);}
+	33%  {color: var(--greywhite);}
+	66%  {color: var(--black);}
+	80%  {color: var(--alink);}
+	100% { color: var(--yellow);}
+ }
+
+  @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+  {
+	0%   {color:var(--white);}
+	33%  {color: var(--greywhite);}
+	66%  {color: var(--black);}
+	80%  {color: var(--alink);}
+	100% { color: var(--yellow);}
+ }
+
+#hidethis {
+	display:none;
+}
+
+#displaythis {
+	/* Do nothing */
+	outline: 0;
+}
+
+.animatethis {animation: fadeIn 5s linear 1s infinite;-webkit-animation: fadeIn 5s linear 0s infinite alternate;}
+.animatethis2 {animation: fadeIn 5s linear 1s infinite;-webkit-animation: fadeIn 5s linear 0s infinite alternate;}	
+@keyframes fadeIn{0% {opacity:0;}100% {opacity:1;}}
+@-webkit-keyframes fadeIn {0% {opacity:0;}100% {opacity:1;}}
+	  
+	  

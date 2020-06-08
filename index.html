@@ -7,9 +7,11 @@
 	<meta name="author" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="grid.css">
 	<link rel="stylesheet" href="default.css">
 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="typography.css">
+	<link rel="stylesheet" href="grid.css">
+	<script src="gridexample.js"></script>
 	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   </head>
   <body>
@@ -24,6 +26,7 @@
 		<div class="item span12 items center-items">
 			<a href="https://github.com/eync/superbro/archive/master.zip" title="download link github" class="button">Download</a>
 		</div>
+
 	</div>
 	<div class="grid introductions">
 		<div class="item span4 items center-items">
@@ -40,6 +43,17 @@
 		</div>
 	</div>
 	<div class="grid">
+		<div class="item span12">
+			<ul class="menu">
+				<li><a href="#thegrid">the grid</a></li>
+				<li><a href="#premade">layouts</a></li>
+				<li><a href="#typo">typography</a></li>
+				<li></li>
+				<li>examples</li>
+				<li>fork it</li>
+				<li></li>
+			</ul>
+			</div>
 		<div class="item span6 items left-items">
 			<h2>intro</h2>
 			<p>This project was launched so it could be effortlesser to start new website designs while adopting modern CSS and HTML structures and build client websites quickly.</p>
@@ -50,133 +64,270 @@
 		<div class="item span6 items right">
 			<h2>Use-cases</h2>
 			<p>Superbro can be used to make quick mockups or build full flexible sites within the ease of css grid layouts.</p>
+
+			<p>Below is listed some example websites or projects that are using superbro</p>
 			<ul class="squared">
-				<li><a href="#">Example site</a></li>
-				<li>More examples coming soon!</li>
+				<li><a href="https://munfirma.fi">Mun Firma</a></li>
+				<li>More sites coming soon</li>
 			</ul>
 			<p>If you have any examples where you have used, please write to me in github.</p>
 		</div>
 		<div class="item span12 items left-items">
-			<h2>the grid</h2>
-			<p>The grid takes advantage of CSS grid definition and it is set to work with ""</p>
+			<h2 id="thegrid">the grid</h2>
+			<p>The grid takes advantage of CSS grid definition and it is set to work with both columns and rows. You can see below the example layout of the grid.</p>
 		</div>
 	</div>
 	<div class="grid example">
-		<div class="item span1 items">
-			<p>ONE column</p>
+		<div class="item span1 items exs">
+			<p>ONE</p>
+			<p><span class="detail">.span1</span></p>
 		</div>
-		<div class="item span11 items">
+		<div class="item span11 items exs">
 			<p>Eleven column</p>
+			<p><span class="detail">.span11</span></p>
 		</div>
-		<div class="item span2 items">
+		<div class="item span2 items exs">
 			<p>two columns</p>
+			<p><span class="detail">.span2</span></p>
 		</div>
-		<div class="item span10 items">
+		<div class="item span10 items exs">
 			<p>ten columns</p>
+			<p><span class="detail">.span10</span></p>
 		</div>
-		<div class="item span3 items">
+		<div class="item span3 items exs">
 			<p>three columns</p>
+			<p><span class="detail">.span3</span></p>
 		</div>
-		<div class="item span9 items">
+		<div class="item span9 items exs">
 			<p>nine columns</p>
+			<p><span class="detail">.span9</span></p>
 		</div>
 	
 	
-		<div class="item span4 items">
+		<div class="item span4 items exs">
 			<p>four columns</p>
+			<p><span class="detail">.span4</span></p>
 		</div>
-		<div class="item span8 items">
+		<div class="item span8 items exs">
 			<p>eight columns</p>
+			<p><span class="detail">.span8</span></p>
 		</div>
 	
 	
-		<div class="item span5 items">
+		<div class="item span5 items exs">
 			<p>five columns</p>
+			<p><span class="detail">.span5</span></p>
 		</div>
-		<div class="item span7 items">
+		<div class="item span7 items exs">
 			<p>seven columns</p>
+			<p><span class="detail">.span7</span></p>
 		</div>
-		<div class="item span6 items">
+
+
+		<div class="item span1 items exs">
+			<p>ONE</p>
+			<p><span class="detail">.span1</span></p>
+		</div>
+				
+		<div class="animatethis item span10 items exs row2">
+			<p>ten columns + two rows</p>
+			<p><span class="detail">.span10</span><span class="detail">.row2</span></p>
+		</div>
+		<div class="item span1 items exs">
+			<p>ONE</p>
+			<p><span class="detail">.span1</span></p>
+		</div>
+
+		<div class="item span1 this items exs">
+			<p>ONE</p>
+			<p><span class="detail">.span1</span></p>
+		</div>	
+			
+		<div class="animatethis item span1 items exs row3">
+			<p>ONE + three ROWS</p>
+			<p><span class="detail">.span1</span></p>
+			<p><span class="detail">.row3</span></p>
+		</div>
+
+		<div class="item items exs exspan6">
 			<p>six columns</p>
+			<p><span class="detail">.span6</span></p>
 		</div>
-		<div class="item span6 items">
-			<p>six columns</p>
-		</div>
-		<div class="item span7 items">
-			<p>seven columns</p>
-		</div>
-		<div class="item span5 items">
+		<div class="item span5 items exs">
 			<p>five columns</p>
+			<p><span class="detail">.span6</span></p>
 		</div>
-		<div class="item span8 items">
-			<p>eight columns</p>
+		<div class="item span7 items exs">
+			<p>seven columns</p>
+			<p><span class="detail">.span7</span></p>
 		</div>
-		<div class="item span4 items">
+		<div class="item span4 items exs">
 			<p>four columns</p>
+			<p><span class="detail">.span4</span></p>
 		</div>
-		<div class="item span9 items">
+		<div class="item span8 items exs">
+			<p>eight columns</p>
+			<p><span class="detail">.span8</span></p>
+		</div>
+		<div id="displaythis" class="animatethis item span4 items exs">
+			<p>four columns</p>
+			<p><span class="detail">.span4</span></p>
+		</div>
+		<div class="item span9 items exs">
 			<p>nine columns</p>
+			<p><span class="detail">.span9</span></p>
 		</div>
-		<div class="item span3 items">
+		<div class="item span3 items exs">
 			<p>three columns</p>
+			<p><span class="detail">.span3</span></p>
 		</div>
-		<div class="item span10 items">
+		<div class="item span10 items exs">
 			<p>ten columns</p>
+			<p><span class="detail">.span10</span></p>
 		</div>
-		<div class="item span2 items">
+		<div class="item span2 items exs">
 			<p>two columns</p>
+			<p><span class="detail">.span2</span></p>
 		</div>
-		<div class="item span11 items">
+		<div class="item span11 items exs">
 			<p>eleven columns</p>
+			<p><span class="detail">.span11</span></p>
 		</div>
-		<div class="item span1 items">
-			<p>one column</p>
+		<div class="item span1 items exs">
+			<p>one</p>
+			<p><span class="detail">.span1</span></p>
 		</div>
 	</div>
 	<div class="grid">
+		<div class="item span12 items left-items">
+			<h2 id="premade">Premade grid layouts</h2>
+			<p>Here's some examples of grid layouts:</p>
+			<div class="button">2 column blog</div> <div class="button">4 column web layout</div> <div class="button">image gallery with rows and columns</div>
+		</div>
 		<div class="item span12 items left">
-			<h2>Typography</h2>
+			<h2 id="typo">Typography</h2>
 			<p>Typography has been made to be scalable within' the limits of viewport and not to jump around. This is made possible by using vh and vw units and basing them in to px units</p>
 				<div class="grid">
-					<div class="item span4 items">
-						<h3>More</h3>
-							<ul>
-								<li>&lt;pre&gt;		Basic text</li>
-								<li>&lt;strong&gt;	<strong>Bold text</strong></li>
-								<li>&lt;quote&gt;	<blockquote><p>God, grant me the serenity to accept the things I cannot change,
-								Courage to change the things I can,
-								And wisdom to know the difference. </p> <footer>- Reinhold Niebuhr<cite>Big Book of AA</cite></footer></blockquote></li>
-								<li>&lt;button&gt;	<div class="button">Simple Button</div></li>
-								<li>More to come</li>
-							</ul>
+					<div class="item span5 items">
+						<h5>Theming</h5>
+						<p>Starting your project is fast as we take advantage of <span class="code">var()</span> & <span class="code">calc()</span> css functions. It also includes easy <span class="colorcycle" style="font-weight:700;">colors</span> configuration for fast development in mind.</p>
+						<h5>units & system</h5>
+						<p>SuperBro takes full advantage of EM, VH and VW units! This way it can be scalable through the fonts and let browser do so called calculations. Fastens development process.</p>
+						<h5>Flexibility</h5>
+						<p>The system should work right out of the box, so it can stay flexible.</p>
 					</div>
+
+					<!-- <div class="item span5 items">
+					</div> -->
 					<div class="item span4 items">
-						<h3>This is code box</h3>
+						<h3>Headers</h3>
+						<h1 class="fixxxs">This is H1 <span id="first">calc(48px + 0.5vh)</span></h1>
+						<h2 class="fixxxs">This is H2 <span id="second">calc(40px + 0.5vh)</span></h2>
+						<h3 class="fixxxs">This is H3 <span id="third">calc(31px + 0.5vh)</span></h3>
+						<h4>This is H4 <span id="fourth">calc(25px + 0.5vh)</span></h4>
+						<h5>This is H5 <span id="fifth">calc(20px + 0.5vh)</span></h5>
+						<h6>This is H6 <span id="sixth">calc(16px + 0.5vh)</span></h6>
+
+					</div>
+					<div class="item span3 items">
+						<h3>More</h3>
+						<ul class="features">
+							<li>&lt;p&gt;		Basic text</li>
+							<li>&lt;strong&gt;	<strong>Bold text</strong></li>
+							<li>&lt;em&gt;		<em>Italic text</em></li>
+							<li>&lt;u&gt;		<u>Underlined text</u></li>
+							<li>&lt;a&gt;		<a href="#">Anchor Link </a></li>
+							<li>&lt;button&gt;	<div class="button">Simple Button</div></li>
+							<li>More to come</li>
+						</ul>
+					</div>
+				</div>
+				
+		</div>
+		<div class="item span7 items">
+			<h3>This is &lt;blockquote&gt;</h3>	<blockquote><p>God, grant me the serenity to accept the things I cannot change,
+				Courage to change the things I can,
+				And wisdom to know the difference. </p> <footer>- Reinhold Niebuhr<cite>Big Book of AA</cite></footer></blockquote>
+		</div>
+		<div class="item span5 items">
+			<h3>This is &lt;code&gt; tag</h3>
 <code>&lt;?php
 $love = "I am in Love"
 echo "My first PHP script!";
 echo "My status:". $love;
 ?&gt;</code>
-					</div>
-					<div class="item span4 items" style="line-height:1.6;">
-						<h3>Headers</h3>
-						<h1>This is H1 <span id="first">calc(48px + 0.5vh)</span></h1>
-						<h2>This is H2 <span id="second">calc(40px + 0.5vh)</span></h2>
-						<h3>This is H3 <span id="third">calc(31px + 0.5vh)</span></h3>
-						<h4>This is H4 <span id="fourth">calc(25px + 0.5vh)</span></h4>
-						<h5>This is H5 <span id="fifth">calc(20px + 0.5vh)</span></h5>
-						<h6>This is H6 <span id="sixth">calc(16px + 0.5vh)</span></h6>
-					</div>
-				</div>
-				
+
 		</div>
+		<div class="item span6 items left">
+			<h3>Tables</h3>
+			<table class="u-full-width">
+				<thead>
+				  <tr>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Sex</th>
+					<th>Location</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td>Sanjiv</td>
+					<td>26</td>
+					<td>Male</td>
+					<td>Helsinki</td>
+				  </tr>
+				  <tr>
+					<td>Link</td>
+					<td>16</td>
+					<td>Male</td>
+					<td>Hyrule</td>
+				  </tr>
+				</tbody>
+			  </table>
+		</div>		
+		<div class="item span6 items left">
+			<h3>Forms</h3>
+  <form>
+	<div class="grid">
+		<div class="item span6">
+			<label for="exampleEmailInput">Your email</label>
+			<input class="u-full-width" type="email" placeholder="test@test.com" id="exampleEmailInput">
+	  	</div>
+	  	<div class="item span6">
+		<label for="exampleRecipientInput">Reason for contacting</label>
+		<select class="u-full-width" id="exampleRecipientInput">
+		  <option value="Option 1">Questions</option>
+		  <option value="Option 2">Admiration</option>
+		  <option value="Option 3">Can I get your number?</option>
+		</select>
+	  	</div>
+	</div>
+	<label for="exampleMessage">Message</label>
+	<textarea class="u-full-width" placeholder="Hello there …" id="exampleMessage"></textarea>
+	<label class="example-send-yourself-copy">
+	  <input type="checkbox">
+	  <span class="label-body">Send a copy to yourself</span>
+	</label>
+	<input class="button-primary" type="submit" value="Submit">
+  </form>
+  
+		</div>	
+
 		<div class="item span12 items left">
 			<h2>Mobile / Media queries</h2>
 			<p>Grid itself is really flexible and mobile friendly. In this project we are taking advantage of both, Grid layouts but also the media-queries. This might be updated later on and plan is to go without any media-queries, but for now we are going with fixed amount of grid-template-columns + media-queries to adjust them.</p>
 		</div>
-		<div class="item span12 items left">
+		<div class="item span8 items left">
 			<h2>Credits & inspiration</h2>
-			<p>This project is maintained by Eync</p>
+			<p>This project is maintained by <a href="https://github.com/eync" title="Sanjiv's Github">Sanjiv</a>. He is inspired by many of simple boilertemplates. Simplicity is the aim and key for the project and that it can be easily applied to any project as a starting plate.</p>
+		</div>
+		<div class="item span4 items left">
+			<h2>Contribute</h2>
+			<p>Help this project to grow and to fix issues by forking it! All suggestions are taken in to consideration!</p>
+			<p><a href="https://github.com/eync/superbro/tree/gh-pages" class="button">Fork it!</a></p>
+		</div>
+		<div class="item span12 items center-items" style="margin-top:10%;">
+			<p>This site was made with love and help of <a href="https://github.com/eync/superbro/">SuperBro</a> boilertemplate.</p>
 		</div>
 	</div>
   </div>
