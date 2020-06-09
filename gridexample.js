@@ -1,4 +1,4 @@
-let theclasses = ["demo", "demo2"];
+let theclasses = ["1", "2"];
 
 const funkkis = () => {
   for(let a = 0; a < 1; a++) {

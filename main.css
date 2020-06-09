@@ -92,8 +92,8 @@
 	=======================*/	
 	.u-full-width {
 		width: 100%;}
-	h1.fixxxs, h2.fixxxs, h3.fixxxs {line-height:0.7em;}
-	h1.fixxxs > span, h2.fixxxs > span {  content: ""; clear: both; }
+	/* h1.fixxxs, h2.fixxxs, h3.fixxxs {line-height:0.7em;}
+	h1.fixxxs > span, h2.fixxxs > span {  content: ""; clear: both; } */
 	
 	
 /*	&& MOBILE FIRST
