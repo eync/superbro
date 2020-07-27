@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+
+
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="tipster" class="display"><h2>Legend</h2></div>
+    <ul>
+        <li id="tips"></li>
+        <li id="tips2"></li>
+        <li id="tips3"></li>
+        <li id="tips4"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="">Tips posted: <div id="tips" class="display"></div><div id="tips2" class="display"></div><div id="tips3" class="display"></div></div>
+    <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>event</th>
+                <th>pick</th>
+                <th>units</th>
+                <th>odds</th>
+                <th>bookmarker</th>
+                <th>date</th>
+
+            </tr>
+        </thead>
+        <!-- <tfoot>
+            <tr>
+                <th>id</th>
+            </tr>
+        </tfoot> -->
+    </table>
+</body>
+<script>
+
+
+    let hetkellinen = [];
+    let hetkellinen2 = [];
+    let hetkellinen3 = [];
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+    document.getElementById("tips").innerHTML = "total tips: "+myObj.data.length;
+    // console.log(myObj.data.find( ({ wonnot }) => wonnot === 'false' ));
+    let correctTips = JSON.stringify(myObj.data.forEach(x => {if (x.wonnot.toLowerCase().includes("true"))hetkellinen.push(x)}));
+    let incorrectTips = JSON.stringify(myObj.data.forEach(x => {if (x.wonnot.toLowerCase().includes("false"))hetkellinen2.push(x)}));
+    let voidTips = JSON.stringify(myObj.data.forEach(x => {if (x.wonnot.toLowerCase().includes("void"))hetkellinen3.push(x)}));
+    document.getElementById("tips2").innerHTML = "correct ones: "+hetkellinen.length;
+    document.getElementById("tips3").innerHTML = "false ones: "+hetkellinen2.length;
+    document.getElementById("tips4").innerHTML = "void ones: "+hetkellinen3.length;
+    console.log(hetkellinen2[0]["odds"]);
+    // for(let a = 0; a < myObj.data.length; a++) {
+    //     // console.log(tester2.length+"loll");
+    //     console.log(a+1);
+    //     // console.log(myObj.data.find(d => d.wonnot === "false").wonnot);
+    //     // console.log("s "+ JSON.stringify(myObj.data.find( ({wonnot}) => wonnot === 'false' )));
+    //         if (JSON.stringify(myObj.data.find( ({wonnot}) => wonnot === 'false' ) === true)) {
+    //         const tester = myObj.data.find(d => d.wonnot === "false").wonnot;
+    //         // hetkellinen.push(a);
+    //         console.log(hetkellinen);
+    //         // for(let b = 0;b<5; b++) {
+    //         //     for(let c = 0;c<hetkellinen.length;c++) {
+    //         //         console.log(c+1);
+    //         //     }
+    //         // } 
+    //         // console.log("tes"+tester.length)
+    //         // console.log(b+1);
+    //         // if (myObj.data.find( ({ wonnot }) => wonnot === 'false' === true )) {
+    //         // hetkellinen.push(b);
+    //         // }
+    //         // if (b < hetkellinen.length) break;    
+    //         }
+    //     // } else if (myObj.data.find(d => d.wonnot === "true").wonnot === "true") {
+    //     //     console.log("lol");
+             
+    // }
+  }
+};
+xmlhttp.open("GET", "test.json", true);
+xmlhttp.send();
+
+    $(document).ready(function() {
+$('#example').DataTable( {
+    "processing": true,
+    "ajax": {
+                url:'http://127.0.0.1:5501/test.json',
+                dataSrc: "data"
+            },
+            columns: [
+                { data: 'event' },
+                { data: 'pick' },
+                { data: 'units' },
+                { data: 'odds' },
+                { data: 'bookmarker' },
+                { data: 'date' },
+                { data: 'wonnot' }
+        ],
+        // "url": 'https://spreadsheets.google.com/feeds/list/1uCgCKsiqgyjiZVCNE_y1e629YAaVCOaxr4KrELOsJdo/od6/public/values?alt=json',
+       // "url": 'http://127.0.0.1:5501/test.json',
+        "datatype": "JSON",
+        //"processing": "TRUE",
+       // "dataSrc": "",
+       "order": [[ 5, "desc" ]],
+    //    columns: [ "event", "pick" ],
+       "columnDefs": [
+            {
+                // The `data` parameter refers to the data for the cell (defined by the
+                // `data` option, which defaults to the column being worked with, in
+                // this case `data: 0`.
+                "render": function ( data, type, row ) {
+                    return data +' ('+ row.wonnot+')';
+                },
+                "targets": 1
+            },
+            { "visible": false,  "targets": [ 6 ] }
+        ]
+});
+});
+
+
+</script>
+</html>

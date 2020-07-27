@@ -1,0 +1,58 @@
+{
+    "data": [
+        {
+            "event": "Sprit - North",
+            "pick": "Sprit",
+            "units": "1",
+            "odds": "2.02",
+            "bookmarker": "sportsbet.io",
+            "date": "12/04/2020",
+            "wonnot": "true"
+          },
+      {
+        "event": "Team Furi2a - Team Liquid2",
+        "pick": "System Architect",
+        "units": "Edinburgh",
+        "odds": "5421",
+        "bookmarker": "2011/04/25",
+        "date": "2011/04/25",
+        "wonnot": "false"
+      },
+      {
+        "event": "Team Fur3ia - Team Liqu3id",
+        "pick": "System Architect",
+        "units": "Edinburgh",
+        "odds": "5421",
+        "bookmarker": "2011/04/25",
+        "date": "2011/04/25",
+        "wonnot": "false"
+      },
+      {
+        "event": "Team Furia - Team Liquid",
+        "pick": "System Architect",
+        "units": "Edinburgh",
+        "odds": "5421",
+        "bookmarker": "2011/04/25",
+        "date": "2011/04/25",
+        "wonnot": "true"
+      },
+      {
+        "event": "Team Furia - Team Liquid",
+        "pick": "System Architect",
+        "units": "Edinburgh",
+        "odds": "5421",
+        "bookmarker": "2011/04/25",
+        "date": "2011/04/25",
+        "wonnot": "false"
+      },
+      {
+        "event": "Team Furia - Team Liquid",
+        "pick": "System Architect",
+        "units": "Edinburgh",
+        "odds": "5421",
+        "bookmarker": "2011/04/25",
+        "date": "2011/04/25",
+        "wonnot": "true"
+      }
+    ]
+  }

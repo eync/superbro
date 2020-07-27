@@ -76,7 +76,8 @@
 
 
 /* GRID UTILITIES - Tools to make grid templating convient */
-.center-items { display:grid;  justify-items: center;align-items: center;}
+.center-items { display:grid;  justify-items: center;align-items: center;text-align:center;}
 .center-itemss { display:grid;  justify-self: center;align-items: center;}
-.left-items { display:grid; justify-items: left;align-items: left;}
-.right-items {  display:grid; justify-items: right;align-items: right;}
+.centercenter {align-self: center;}
+.left-items { display:grid; justify-items: left;text-align:left;}
+.right-items {  display:grid; justify-items: right;text-align:right;}

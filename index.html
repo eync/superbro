@@ -14,19 +14,22 @@
 	<script src="gridexample.js"></script>
 	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   </head>
+
   <body>
   <div class="base">
 	<div class="grid">
-		<div class="item span12 items center-items">
-			<h1 class="logo">SuperBro - Simple Grid Template</h1>
+		<div class="item span12">
+			<h1 class="logo center-items">SuperBro.dev</h1>
+            <ul class="menu grid">
+                <li class="span4 centercenter"><a href="#thegrid">The Grid</a></li>
+				<li class="span4 centercenter"><a href="#typo">Typography</a></li>
+				<li class="span4 centercenter"><a href="#credits">Credits</a></li>
+            </ul>
 		</div>
 		<div class="item span12 items center-items">
-			<p class="slogan">It's Uncomplicated CSS Template, Driven By The Modern Grid Css Technology</p>
-		</div>
-		<div class="item span12 items center-items">
+			<h5 style="line-height: 130%;letter-spacing:-1px;">It's Uncomplicated CSS Template, with CSS grid definitions.</h5>
 			<a href="https://github.com/eync/superbro/archive/master.zip" title="download link github" class="button">Download</a>
 		</div>
-
 	</div>
 	<div class="grid introductions">
 		<div class="item span4 items center-items">
@@ -41,19 +44,9 @@
 			<img class="imgimg" src="icons/code.svg">
 			<h4 style="text-align:center;">CSS Grid Layout</h4>
 		</div>
+		
 	</div>
 	<div class="grid">
-		<div class="item span12">
-			<ul class="menu">
-				<li><a href="#thegrid">the grid</a></li>
-				<li><a href="#premade">layouts</a></li>
-				<li><a href="#typo">typography</a></li>
-				<li></li>
-				<li>examples</li>
-				<li>fork it</li>
-				<li></li>
-			</ul>
-			</div>
 		<div class="item span6 items left-items">
 			<h2>intro</h2>
 			<p>This project was launched so it could be effortlesser to start new website designs while adopting modern CSS and HTML structures and build client websites quickly.</p>
@@ -330,7 +323,7 @@ echo "My status:". $love;
 			<h2>Mobile / Media queries</h2>
 			<p>Grid itself is really flexible and mobile friendly. In this project we are taking advantage of both, Grid layouts but also the media-queries. This might be updated later on and plan is to go without any media-queries, but for now we are going with fixed amount of grid-template-columns + media-queries to adjust them.</p>
 		</div>
-		<div class="item span8 items left">
+		<div id="credits" class="item span8 items left">
 			<h2>Credits & inspiration</h2>
 			<p>This project is maintained by <a href="https://github.com/eync" title="Sanjiv's Github">Sanjiv</a>. He is inspired by many of simple boilertemplates. Simplicity is the aim and key for the project and that it can be easily applied to any project as a starting plate.</p>
 		</div>

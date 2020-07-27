@@ -7,35 +7,26 @@
 	p {font-weight:300;}
 	@media (min-width: 250px) {
 		.logo {
-			text-align:center;
-			line-height: 50px;
-			letter-spacing: -.1rem;
 			color: var(--yellow);
-			/* Dirty fix for smaller screens */
+
 		}
 	}
 	@media (min-width: 420px) {
 		.logo {
-			text-align:center;
-			line-height: 50px;
-			letter-spacing: -.1rem;
+
 			
 			
 		}
 	}
 	@media (min-width: 750px) {
 		.logo {
-			text-align:center;
-			line-height: 10px;
-			letter-spacing: -.1rem;
+
 			
 		}
 	}
 	.logo {
-		text-align:center;
-		line-height: 50px;
-		letter-spacing: -.1rem;
-		padding:10px;
+		font-size: 2.7em;
+		font-weight:700;
 		
 	}
 	.title h2 {
@@ -190,17 +181,15 @@ td:last-child {
 
 ul.menu  {
     list-style-type: none;
-	margin: 50px auto;
-	padding:10px 0 10px;
-	background: var(--white);
+	margin: 1px;
+	padding:0 0 2.5em;
+	background: none;
 	text-align: center;
-	color: var(--abg);
-    border-radius: 4px;
+	color: var(--white);
     text-transform: uppercase;
-	margin-top: 50px;
 	letter-spacing: .1rem;
   }
-ul.menu > li > a {color: var(--abg);font-weight: 700;font-size: 1rem;text-decoration:none;}
+ul.menu > li > a {color: var(--white);font-weight: 700;font-size: 1rem;text-decoration:none;}
 ul.menu > li {
     display: inline;
     padding:1em;

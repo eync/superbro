@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Superbro Minimalistic grid template | CSS-grid, HTML5 boilerplate</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="default.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="example.css">
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  </head>
+  <body>
+  <div class="base">
+	<div class="grid">
+		<div class="item span12 items center-items">
+            <h1 style="color:#101010;line-height: 130%;letter-spacing:-1px;">SuperBro - Simple Grid Template</h1>
+            <h3 style="color:#1c1c1c;line-height: 130%;letter-spacing:-1px;">The examples to show the power of CSS Grids. Simple, yet effective way to build quickly website.</h3>
+            <a href="#" class="button">Download now</a>
+        </div>
+        
+        <div class="item span4 items">
+            <div class="numbers">1</div>
+            <div class="numberstext" style="color:#1c1c1c;line-height: 130%;letter-spacing:-1px;">Download SuperBro and start "Gridding".</div>
+        </div>
+        <div class="item span4 items">
+            <div class="numbers">2</div>
+            <div class="numberstext" style="color:#1c1c1c;line-height: 130%;letter-spacing:-1px;">Wireframe your project or build website.</div>
+        </div>
+        <div class="item span4 items">
+            <div class="numbers">3</div>
+            <div class="numberstext" style="color:#1c1c1c;line-height: 130%;letter-spacing:-1px;">Ready to deploy your website project on to web or app.</div>
+        </div>
+        <div class="item span12 left-items">
+            <h4>Website layout example #1</h4>
+        </div>
+
+        <div class="grid example">
+            <div class="item span12 items exs">
+                <p>LOGO + MENU</p>
+                <p><span class="detail">.span1</span></p>
+            </div>
+
+            <div class="item span2 items exs row3">
+                <p>SIDEMENU</p>
+                <p><span class="detail">.span11 + .row3</span></p>
+            </div>
+            <div class="item span8 items exs row1">
+                <p>Content</p>
+                <p><span class="detail">.span10</span></p>
+            </div>
+
+            <div class="item span2 items exs row2">
+                <p>SIDEMENU</p>
+                <p><span class="detail">.span11 + .row3</span></p>
+            </div>
+
+            <div class="item span8 items exs row3">
+                <p>ten columns</p>
+                <p><span class="detail">.span10</span></p>
+                <p><span class="fill">#####</span></p>
+                <p><span class="fill">#####</span></p>
+                <p><span class="fill">#####</span></p>
+                
+            </div>
+            <div class="item span2 items exs row2">
+                <p>SIDEMENU</p>
+                <p><span class="detail">.span11 + .row3</span></p>
+            </div>
+        
+            <div class="item span4 items exs">
+                <p>four columns</p>
+                <p><span class="detail">.span4</span></p>
+            </div>
+            <div class="item span4 items exs">
+                <p>eight columns</p>
+                <p><span class="detail">.span8</span></p>
+            </div>
+            <div class="item span4 items exs">
+                <p>eight columns</p>
+                <p><span class="detail">.span8</span></p>
+            </div>
+
+           
+        </div>
+
+        <div class="item span12 items">
+            <code>&lt;div class="grid example"&gt;
+                &lt;div class="item span12 items exs"&gt;
+                &lt;p&gt;LOGO + MENU&lt;/p&gt;
+                &lt;p&gt;&lt;span class="detail"&gt;.span1&lt;/span&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="item span2 items exs row3"&gt;
+                &lt;p&gt;SIDEMENU&lt;/p&gt;
+                &lt;p&gt;&lt;span class="detail"&gt;.span11 + .row3&lt;/span&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="item span8 items exs row1"&gt;
+                &lt;p&gt;Content&lt;/p&gt;
+                &lt;p&gt;&lt;span class="detail"&gt;.span10&lt;/span&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="item span2 items exs row2"&gt;
+                &lt;p&gt;SIDEMENU&lt;/p&gt;
+                &lt;p&gt;&lt;span class="detail"&gt;.span11 + .row3&lt;/span&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="item span8 items exs row3"&gt;
+                &lt;p&gt;ten columns&lt;/p&gt;
+                &lt;p&gt;&lt;span class="detail"&gt;.span10&lt;/span&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;span class="fill"&gt;#####&lt;/span&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;span class="fill"&gt;#####&lt;/span&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;span class="fill"&gt;#####&lt;/span&gt;&lt;/p&gt;
+                
+                &lt;/div&gt;
+                &lt;div class="item span2 items exs row2"&gt;
+                &lt;p&gt;SIDEMENU&lt;/p&gt;
+                &lt;p&gt;&lt;span class="detail"&gt;.span11 + .row3&lt;/span&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="item span4 items exs"&gt;
+                &lt;p&gt;four columns&lt;/p&gt;
+                &lt;p&gt;&lt;span class="detail"&gt;.span4&lt;/span&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="item span4 items exs"&gt;
+                &lt;p&gt;eight columns&lt;/p&gt;
+                &lt;p&gt;&lt;span class="detail"&gt;.span8&lt;/span&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="item span4 items exs"&gt;
+                &lt;p&gt;eight columns&lt;/p&gt;
+                &lt;p&gt;&lt;span class="detail"&gt;.span8&lt;/span&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                
+                &lt;/div&gt;
+            </code>
+            </div>
+        
+            <div class="item span12 left-items">
+                <h4>Website layout example #2</h4>
+            </div>
+    
+            <div class="grid example">
+                <div class="item span2 items exs row4" style="justify-self: left;">
+                    <p>SIDEMENU</p>
+                    <p><span class="detail">.span11 + .row3</span></p>
+                </div>
+                <div class="item span10 items exs" style="justify-self: right;">
+                    <p>LOGO + MENU</p>
+                    <p><span class="detail">.span1</span></p>
+                </div>
+    
+
+                <div class="item span10 items exs" style="justify-self: right;">
+                    <p>Top-Content</p>
+                    <p><span class="detail">.span10</span></p>
+                </div>
+    
+                <div class="item span3 items exs row2">
+                    <p>SIDEMENU</p>
+                    <p><span class="detail">.span11 + .row3</span></p>
+                </div>
+    
+                <div class="item span3 items exs row2">
+                    <p>ten columns</p>
+                    <p><span class="detail">.span10</span></p>
+                    <p><span class="fill">#####</span></p>
+                    <p><span class="fill">#####</span></p>
+                    <p><span class="fill">#####</span></p>
+                    
+                </div>
+                
+                <div class="item span4 items exs row2">
+                    <p>eight columns</p>
+                    <p><span class="detail">.span8</span></p>
+                </div>
+
+                <div class="item span12 items exs">
+                    <p>eight columns</p>
+                    <p><span class="detail">.span8</span></p>
+                </div>
+    
+               
+            </div>
+    
+            <div class="item span12 items">
+                <code>&lt;div class="grid example"&gt;
+                    &lt;div class="item span12 items exs"&gt;
+                    &lt;p&gt;LOGO + MENU&lt;/p&gt;
+                    &lt;p&gt;&lt;span class="detail"&gt;.span1&lt;/span&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class="item span2 items exs row3"&gt;
+                    &lt;p&gt;SIDEMENU&lt;/p&gt;
+                    &lt;p&gt;&lt;span class="detail"&gt;.span11 + .row3&lt;/span&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="item span8 items exs row1"&gt;
+                    &lt;p&gt;Content&lt;/p&gt;
+                    &lt;p&gt;&lt;span class="detail"&gt;.span10&lt;/span&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class="item span2 items exs row2"&gt;
+                    &lt;p&gt;SIDEMENU&lt;/p&gt;
+                    &lt;p&gt;&lt;span class="detail"&gt;.span11 + .row3&lt;/span&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class="item span8 items exs row3"&gt;
+                    &lt;p&gt;ten columns&lt;/p&gt;
+                    &lt;p&gt;&lt;span class="detail"&gt;.span10&lt;/span&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;span class="fill"&gt;#####&lt;/span&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;span class="fill"&gt;#####&lt;/span&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;span class="fill"&gt;#####&lt;/span&gt;&lt;/p&gt;
+                    
+                    &lt;/div&gt;
+                    &lt;div class="item span2 items exs row2"&gt;
+                    &lt;p&gt;SIDEMENU&lt;/p&gt;
+                    &lt;p&gt;&lt;span class="detail"&gt;.span11 + .row3&lt;/span&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class="item span4 items exs"&gt;
+                    &lt;p&gt;four columns&lt;/p&gt;
+                    &lt;p&gt;&lt;span class="detail"&gt;.span4&lt;/span&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="item span4 items exs"&gt;
+                    &lt;p&gt;eight columns&lt;/p&gt;
+                    &lt;p&gt;&lt;span class="detail"&gt;.span8&lt;/span&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="item span4 items exs"&gt;
+                    &lt;p&gt;eight columns&lt;/p&gt;
+                    &lt;p&gt;&lt;span class="detail"&gt;.span8&lt;/span&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;/div&gt;
+                </code>
+                </div>
+        <div class="item span12 items center-items">
+            <div style="color:#1c1c1c;line-height: 130%;letter-spacing:-1px;"><h4>More examples</h4><p>Do you have more examples or ideas? Please write to me and I will add them here.</p></div>
+        </div>
+        <div class="item span12 items center-items">
+            <div style="color:#1c1c1c;line-height: 130%;letter-spacing:-1px;margin-top:25%;">SuperBro example website 2020.</div>
+		</div>
+    </div>
+  </div>
+  </body>
+</html>
