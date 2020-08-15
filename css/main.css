@@ -22,25 +22,7 @@
 		line-height: 1em;
 	}
 
-/*	&& BASIC TYPOGRAPHY
-	=======================*/
-	h1 {
-		font-size: 5vh;
-		color: var(--yellow);
-	}
-	h2 {
-		font-size: 4vh;
-	}
-	
-	.base {
-		display:grid;
-		justify-self: center;
-		align-content: center;
-		margin: 0 1em;
-		padding: 2em 5em;
 
-	}
-	
 	
 /*	&& MOBILE FIRST
 	The best way to keep your code well structured is to create the queries close 

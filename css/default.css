@@ -20,14 +20,18 @@ iframe { border: 0; }
 
 /* ::::BASE Styles
 ================================================== */
+html {font-family: sans-serif;}
 .base {
+	display:grid;
+	justify-self: center;
+	align-content: center;
+	margin: 0 1em;
+	padding: 2em 5em;
 
 }
-
 .grid { display: grid; grid-template-columns: repeat(var(--clmns, 12), minmax(0, 1fr));}
 
 .item {
-	border:1px solid black;
 	text-transform: uppercase;
 }
  
