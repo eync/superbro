@@ -1,0 +1,283 @@
+/*
+* SuperBro version 0.1.2
+* Copyright 2019, Sanjiv Rana
+* www.superbro.dev
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* Last update: 6-jun-2020
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+
+/* && CSS RESET 
+================================================== */
+iframe { border: 0; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+body {line-height: 1; }
+
+ol, ul {list-style: none; }
+
+/*	&& COLORS & SIZE SETTINGS 	
+	=======================*/
+	:root {
+        /*	===========SITE BASIC SETTINGS========== */
+        --site-size: 75em; /* about 1200px */
+        --columns:; /* default value is 12, leave it empty if you want to keep 12 columns setting */
+
+        /*	===========FONT(s)==========  */
+        --font-main:'Montserrat', sans-serif;
+        --font-alt:'Source Code Pro';
+
+        /*	===========PRIMARY COLORS==========  */ 
+            /* FONT COLOR(s) */
+            /* you could define here for each tag line the color you would like to use */
+
+            /* background color */           
+        --background-main: var(--white);
+            /* LINK COLOR(s) */
+        --alink:#ED217C;
+        --alink-hover:rgb(250, 25, 126);
+        --alink-active:var(--alink);
+        --alink-visited:var(--alink);
+            /* CUSTOM COLORS */
+            /* add below your own specific colors // */
+        --bqg: #b3b3b3;		
+        --greywhite: #b3b3b3;
+        --black-alt: #03191E;
+        --yellow: #fdca40;      
+
+            /* SHADES */
+            /* predefined shades from black to white */
+        --black: #1d1d21;
+        --gray-10: #2e2e31;
+        --gray-6: #7b7a7d;
+        --gray-4: #a5a5a6;
+        --gray-3: #bbbbbc;
+        --gray-2: #d1d0d2;
+        --gray-1: #e8e7e8;
+        --white: #e6e8e6;
+
+            /* STATUS COLOR(s) */
+        --color-success: #88c459;
+        --color-error: #f5414f;
+        --color-warning: #ffd137;
+
+            /* BORDER COLOR(s) */
+
+            /* BUTTON COLORS */
+        --primary-button:var(--white); --primary-button-bg:transparent; --primary-button-bdr:var(--greywhite); 
+
+        --a-button:var(--primary-button);--a-button-bg:var(--primary-button-bg);--a-button-bdr:var(--primary-button-bdr);
+
+                /* Alternative buttons */
+        --button-1:; --button-1-bg:; --button-1-bdr:;
+        --button-2:;
+        --button-3:;
+        --button-4:;
+   
+
+
+        /* COMPONENT COLORS */
+        --quote-background:;
+        --code-background:#c0c0c073;
+        --codebox: #c0c0c073;
+
+        /*	=======================  */
+        /* TEXT / FONTS SETTINGS  */
+        --text-base-value:1em;
+        --text-scale-value: 0.5vh;
+	 	 	 	 	 
+		--h1: 3em;
+		--h2: 2.5em;
+		--h3: 1.938em;
+		--h4: 1.563em;
+		--h5: 1.250em;
+		--h6: 1em;
+        --quotetextsize: 12px;
+        
+        /* line-height */
+        --heading-line-height: 2;
+        --body-line-height: 1.4;
+    }
+    
+/*	&& Typography setup
+	=======================*/
+h1, h2, h3, h4, h5, h6 {
+    text-transform: capitalize;
+    font-weight:700;
+    line-height: var(--heading-line-height);
+}
+
+h1 {font-size: calc(var(--h1) + var(--text-scale-value));}
+h2 {font-size: calc(var(--h2) + var(--text-scale-value));}
+h3 {font-size: calc(var(--h3) + var(--text-scale-value));}
+h4 {font-size: calc(var(--h4) + var(--text-scale-value));}
+h5 {font-size: calc(var(--h5) + var(--text-scale-value));}
+h6 {font-size: calc(var(--h6) + var(--text-scale-value));}
+
+em {font-style: italic;}
+strong {font-weight:700;}
+
+a { color: var(--alink); text-decoration: underline; outline: 0; }
+a:hover, a:focus { color: var(--alink-hover); }
+a:visited { color: var(--alink-visited); }
+a:active { color: var(--alink-active); }
+
+.button {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    margin: 10px 0;
+    color: var(--primary-button);
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: var(--primary-button-bg);
+    border-radius: 4px;
+    border: 1px solid var(--primary-button-bdr);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.button:active, .button:visited {color: var(--primary-button);}
+.button:hover {color: var(--white);border-color: var(--white);outline: 0;}
+
+a.button{background-color: var(--a-button-bg);border: 1px solid var(--a-button-bdr);color: var(--a-button);}
+a.button:active, a.button:visited {color: var(--a-button);}
+a.button:hover{}
+
+blockquote {
+    margin-right:6.25em;
+}
+blockquote p {
+    padding: 15px;
+    background: var(--gray-1);
+    border-radius: 5px;
+    color: var(--black);
+    font-size: var(--h5);
+    font-family: var(--font-alt);
+}
+blockquote cite {
+    color: var(--white);
+    font-style: italic;
+    font-family: var(--font-alt);
+}
+blockquote footer {
+    padding: 1px 10px;
+    font-size: var(--quotetextsize);
+    color: var(--white);
+    font-family: var(--font-alt);
+}
+
+blockquote p::before {
+    content: '\201C  ';
+    font-size: var(--h4);
+}
+
+blockquote p::after {
+    content: '  \201D';
+    font-size: var(--h4);
+}
+blockquote cite::before {
+    content: ', ';
+}
+
+code {
+	border: 1px solid var(--code-background);
+	background: var(--code-background);
+	font-size: calc(12px + var(--text-scale-value));
+	letter-spacing: 1.5px;
+	width:100%;
+	height:5em;
+	display:block;
+	padding:10px;
+	white-space: pre;
+	line-height: 30px;
+	font-family: var(--font-alt);
+	overflow: scroll;
+}
+
+/*	&& Forms
+	=======================*/
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+
+/*	&& Tables
+	=======================*/
+th {font-weight:700;}
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }

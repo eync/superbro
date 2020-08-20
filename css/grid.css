@@ -1,0 +1,100 @@
+/*
+* SuperBro version 0.1.2
+* Copyright 2019, Sanjiv Rana
+* www.superbro.dev
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* Last update: 6-jun-2020
+*/
+
+.grid {grid-gap:15px; display: grid; grid-template-columns: repeat(var(--columns, 12), minmax(1em, 1fr)); grid-column: span 12 ;margin-top:20px;}
+
+/* ::--:Span e.g. how much space each "item" will take
+================================================== */
+
+/* Mobile Hand device sizing  */
+.span1 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+.span2 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+.span3 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+.span4 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+.span5 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+.span6 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+.span7 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+.span8 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+.span9 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+.span10 { grid-column: span 12; grid-row: span 1; width: 100%; }
+.span11 { grid-column: span 12; grid-row: span 1; width: 100%; }
+.span12 { grid-column: span 12; grid-row: span 1; width: 100%; }
+
+/* Tablet / other screens */
+@media (min-width: 420px) {
+	.span1 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+	.span2 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+	.span3 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+	.span4 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+	.span5 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+	.span6 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+	.span7 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+	.span8 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+	.span9 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
+	.span10 { grid-column: span 12; grid-row: span 1; width: 100%; }
+	.span11 { grid-column: span 12; grid-row: span 1; width: 100%; }
+	.span12 { grid-column: span 12; grid-row: span 1; width: 100%; }
+}
+    
+/* Desktop or larger */
+@media (min-width: 960px) {
+    .span0 {  grid-column: span 0 ; grid-row: span 1; width: 100%; }
+    .span1 {  grid-column: span 1 ; grid-row: span 1; width: 100%; }
+    .span2 {  grid-column: span 2 ; grid-row: span 1; width: 100%; }
+    .span3 {  grid-column: span 3 ; grid-row: span 1; width: 100%; }
+    .span4 {  grid-column: span 4 ; grid-row: span 1; width: 100%; }
+    .span5 {  grid-column: span 5 ; grid-row: span 1; width: 100%; }
+    .span6 {  grid-column: span 6 ; grid-row: span 1; width: 100%; }
+    .span7 {  grid-column: span 7 ; grid-row: span 1; width: 100%; }
+    .span8 {  grid-column: span 8 ; grid-row: span 1; width: 100%; }
+    .span9 {  grid-column: span 9 ; grid-row: span 1; width: 100%; }
+    .span10 { grid-column: span 10; grid-row: span 1; width: 100%; }
+    .span11 { grid-column: span 11; grid-row: span 1; width: 100%; }
+    .span12 { grid-column: span 12; grid-row: span 1; width: 100%; }
+    .row1 { grid-row: span 1; height:100%; }
+    .row2 { grid-row: span 2; height:100%; }
+    .row3 { grid-row: span 3; height:100%; }
+    .row4 { grid-row: span 4; height:100%; }
+    .row5 { grid-row: span 5; height:100%; }
+    .row6 { grid-row: span 6; height:100%; }
+    .row7 { grid-row: span 7; height:100%; }
+    .row8 { grid-row: span 8; height:100%; }
+    .row9 { grid-row: span 9; height:100%; }
+    .row10 { grid-row: span 10; height:100%; }
+    .row11 { grid-row: span 11; height:100%; }
+    .row12 { grid-row: span 12; height:100%; }
+}
+
+
+/* GRID UTILITIES - Tools to make grid templating convient */
+.tl, .text-left {text-align:left;}
+.tr, .text-right {text-align:right;}
+.tc, .text-center {text-align:center;}
+
+    /* POSITIONING */
+.sc, .super-center {display:grid; place-items:center;}
+
+.as, .align-self-center {display:grid;align-self:center;}
+.ac, .align-children-center {display:grid;align-items:center;} 
+
+.asl, .align-self-start {display:grid;align-self:start;}
+.acl, .align-children-start {display:grid;align-items:start;} 
+
+.ase, .align-self-end {display:grid;align-self:right;}
+.ace, .align-children-end {display:grid;align-items:right;} 
+
+.js, .justify-self-center {display:grid;justify-self:center;}
+.jc, .justify-children-center {display:grid;justify-items:center;} 
+
+.jsl, .justify-self-left {display:grid;justify-self:left;}
+.jcl, .justify-children-left {display:grid;justify-items:left;} 
+
+.jsr, .justify-self-right {display:grid;justify-self:right;}
+.jcr, .justify-children-right {display:grid;justify-items:right;} 
+
