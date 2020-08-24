@@ -1,15 +1,16 @@
 # superbro
-Very minimalistic boilerplate to start the most simplest projects. 
-
+Minimalistic Boilerplate
 Made in mind of mobile-first orientation.
 
+It's quick and easy to start new projects with Superbro, since it offers many goods of HTML5 and CSS3 out of box. It's small library and supports all new browsers.
+
 ### Features
-- Basic reset
-- Responsive grid
-- Clean typography
-- More to come!
+- CSS reset
+- Clean typography 
+- Grid.css (help of CSS Grid Definition)
+- Settings.css with VAR functions
 
 ### Todo
-- Viewport support
-- make it Grid compatible with VH/VWs
-- Using var's to make easy col and minmax system for templating
+- Remove all PX and replace them with EMs or VHs
+- Fix the Grid-row system in it
+

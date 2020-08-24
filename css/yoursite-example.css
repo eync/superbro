@@ -1,17 +1,6 @@
-/*	&& START HERE
+/*	&& START
+		Write your code here
 	=======================*/	
-	html {
-		font-family: sans-serif;
-	}
-	body {
-		font-family: var(--font-main);
-		background: var(--background-main);
-		color:var(--black);
-		font-size: calc(var(--text-base-value));
-		line-height: var(--body-line-height);
-		margin:1px auto;
-		max-width: var(--site-size);
-	}
 	p {
 		line-height: 1em;
 	}

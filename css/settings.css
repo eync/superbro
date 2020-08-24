@@ -1,10 +1,10 @@
 /*
 * SuperBro version 0.1.2
-* Copyright 2019, Sanjiv Rana
+* Copyright 2019-2020, Sanjiv Rana
 * www.superbro.dev
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
-* Last update: 6-jun-2020
+* Last update: 24-aug-2020
 */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
@@ -30,6 +30,7 @@ ol, ul {list-style: none; }
         /*	===========FONT(s)==========  */
         --font-main:'Montserrat', sans-serif;
         --font-alt:'Source Code Pro';
+        --font-default:sans-serif;
 
         /*	===========PRIMARY COLORS==========  */ 
             /* FONT COLOR(s) */
@@ -68,15 +69,18 @@ ol, ul {list-style: none; }
             /* BORDER COLOR(s) */
 
             /* BUTTON COLORS */
-        --primary-button:var(--white); --primary-button-bg:transparent; --primary-button-bdr:var(--greywhite); 
+        --primary-button:var(--black-alt); --primary-button-bg:transparent; --primary-button-bdr:var(--greywhite); 
+        --primary-button-hover:var(--gray-4); --primary-button-hover-bg:var(--gray-6); --primary-button-hover-bdr:var(--primary-button-bdr:); 
 
         --a-button:var(--primary-button);--a-button-bg:var(--primary-button-bg);--a-button-bdr:var(--primary-button-bdr);
+        --a-button-hover:var(--primary-button-hover);--a-button-hover-bg:var(--primary-button-hover-bg);--a-button-hover-bdr:var(--primary-button-hover-bdr);
 
                 /* Alternative buttons */
-        --button-1:; --button-1-bg:; --button-1-bdr:;
+                /*   Could used to make different color classes for example */
+    /*  --button-1:; --button-1-bg:; --button-1-bdr:;
         --button-2:;
         --button-3:;
-        --button-4:;
+        --button-4:; */
    
 
 
@@ -103,6 +107,20 @@ ol, ul {list-style: none; }
         --body-line-height: 1.4;
     }
     
+
+    /* !! Do not change code below, make your changes / code in it's own file !! */
+html {
+	font-family: var(--font-default);
+}
+body {
+	font-family: var(--font-main);
+	background: var(--background-main);
+	color:var(--black);
+	font-size: calc(var(--text-base-value));
+	line-height: var(--body-line-height);
+	margin:1px auto;
+	max-width: var(--site-size);
+}
 /*	&& Typography setup
 	=======================*/
 h1, h2, h3, h4, h5, h6 {
@@ -126,12 +144,11 @@ a:hover, a:focus { color: var(--alink-hover); }
 a:visited { color: var(--alink-visited); }
 a:active { color: var(--alink-active); }
 
-.button {
+a.button, button {
     display: inline-block;
     height: 38px;
     padding: 0 30px;
     margin: 10px 0;
-    color: var(--primary-button);
     text-align: center;
     font-size: 11px;
     font-weight: 700;
@@ -140,19 +157,17 @@ a:active { color: var(--alink-active); }
     text-transform: uppercase;
     text-decoration: none;
     white-space: nowrap;
-    background-color: var(--primary-button-bg);
     border-radius: 4px;
-    border: 1px solid var(--primary-button-bdr);
     cursor: pointer;
     box-sizing: border-box;
 }
 
-.button:active, .button:visited {color: var(--primary-button);}
-.button:hover {color: var(--white);border-color: var(--white);outline: 0;}
+button {background-color: var(--primary-button-bg);border: 1px solid var(--primary-button-bdr);color: var(--primary-button);}
+button:hover {background-color: var(--primary-button-hover-bg);border: 1px solid var(--primary-button-hover-bdr);color: var(--primary-button-hover);}
 
 a.button{background-color: var(--a-button-bg);border: 1px solid var(--a-button-bdr);color: var(--a-button);}
 a.button:active, a.button:visited {color: var(--a-button);}
-a.button:hover{}
+a.button:hover{background-color: var(--a-button-hover-bg);border: 1px solid var(--a-button-hover-bdr);color: var(--a-button-hover);}
 
 blockquote {
     margin-right:6.25em;
