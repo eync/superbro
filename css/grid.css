@@ -83,6 +83,7 @@
 .as, .align-self-center {display:grid;align-self:center;}
 .ac, .align-children-center {display:grid;align-items:center;} 
 
+/* you can guess why this is "asl" and not... */
 .asl, .align-self-start {display:grid;align-self:start;}
 .acl, .align-children-start {display:grid;align-items:start;} 
 
@@ -97,4 +98,15 @@
 
 .jsr, .justify-self-right {display:grid;justify-self:right;}
 .jcr, .justify-children-right {display:grid;justify-items:right;} 
+
+.aca, .align-content-around {display:grid;align-content: space-around;}
+.acb, .align-content-between {display:grid;align-content: space-between;}
+.ace, .align-content-evenly {display:grid;align-content: space-evenly;}
+
+.jca, .justify-content-around {display: grid;justify-content: space-around;}
+.jcb, .justify-content-between {display: grid;justify-content: space-between;}
+.jce, .justify-content-evenly {display: grid;justify-content: space-evenly;}
+
+.jcs, .justify-content-stretch {display: grid;justify-content: stretch;}
+.acs, .align-content-stretch {display: grid;align-content: stretch;}
 
