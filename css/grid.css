@@ -87,8 +87,8 @@
 .asl, .align-self-start {display:grid;align-self:start;}
 .acl, .align-children-start {display:grid;align-items:start;} 
 
-.ase, .align-self-end {display:grid;align-self:right;}
-.ace, .align-children-end {display:grid;align-items:right;} 
+.ase, .align-self-end {display:grid;align-self:end;}
+.ace, .align-children-end {display:grid;align-items:end;} 
 
 .js, .justify-self-center {display:grid;justify-self:center;}
 .jc, .justify-children-center {display:grid;justify-items:center;} 
