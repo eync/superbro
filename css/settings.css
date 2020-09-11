@@ -112,15 +112,24 @@ ol, ul {list-style: none; }
 html {
 	font-family: var(--font-default);
 }
+
 body {
 	font-family: var(--font-main);
 	background: var(--background-main);
 	color:var(--black);
 	font-size: calc(var(--text-base-value));
 	line-height: var(--body-line-height);
-	margin:1px auto;
-	max-width: var(--site-size);
+  margin: 0 auto;
+  padding: 2em;
 }
+
+.base {
+  display:block;
+  margin: 0 auto;
+  max-width: var(--site-size);
+  position: relative;
+}
+
 /*	&& Typography setup
 	=======================*/
 h1, h2, h3, h4, h5, h6 {
