@@ -18,7 +18,7 @@ Visit [Superbro.DEV](https://superbro.dev) for better documentation.
 The grid itself is flexible and mobile friendly, thanks to CSS Grid. 
 We can also take advantage of "columns" and "rows" as seen below.
 
-![](https://github.com/eync/superbro/blob/gh-pages/gif.gif)
+![](https://github.com/eync/SuperBro.dev/blob/master/gif.gif)
 
 ### Todo
 - Remove all PX and replace them with EMs or VHs
