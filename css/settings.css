@@ -180,7 +180,7 @@ button:hover {background-color: var(--primary-button-hover-bg);border: 1px solid
 
 a.button{background-color: var(--a-button-bg);border: 1px solid var(--a-button-bdr);color: var(--a-button);}
 a.button:active, a.button:visited {color: var(--a-button);}
-a.button:hover{background-color: var(--a-button-hover-bg);border: 1px solid var(--a-button-hover-bdr);color: var(--a-button-hover);}
+a.button:hover{background-color: var(--a-button-hover-bg);border-color: var(--a-button-hover-bdr);color: var(--a-button-hover);}
 
 blockquote {
     margin-right:6.25em;
