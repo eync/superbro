@@ -29,10 +29,10 @@ Current version is [0.1.2.](https://github.com/eync/superbro/releases/tag/v0.1.2
 
 ### Examples
 Websites created with superbro boilerplate.
--   [superbro.dev](https://superbro.dev)
--   [kallion pesula](https://kallionpesula.com)
--   [mun firma](https://munfirma.fi)
--   [sanjiv's portfolio](https://sanjiv.info)
+-   __[superbro.dev](https://superbro.dev)__  _([github repo](https://github.com/eync/SuperBro.dev))_
+-   __[kallion pesula](https://kallionpesula.com)__
+-   __[mun firma](https://munfirma.fi)__
+-   __[sanjiv's portfolio](https://sanjiv.info)__ / _([github repo](https://github.com/eync/eync.github.io))_
 
 ### License
 Superbro is free to use under the [open-source MIT-License](https://github.com/eync/superbro/blob/master/LICENSE.md)
