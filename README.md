@@ -11,8 +11,29 @@ Visit [Superbro.DEV](https://superbro.dev) for better documentation.
 ### Features
 - CSS reset
 - Clean typography 
-- Grid.css (help of CSS Grid Definition)
+- Adjustable 12 column grid (help of CSS Grid Definition)
 - Settings.css with VAR functions
+- Headers are adjusted according to the screen with help of calc function
+
+### Components
+**Done Components:**
+- Buttons
+- Forms
+- Tables
+- Blockquote
+- Codeblock
+- Menu
+
+
+**Planned Components:**
+- Alerts
+- Breadcrumb
+- Cards 
+- Dropdown
+- Labels
+- Progress Bar
+- Profile
+
 
 ### Grid
 The grid itself is flexible and mobile friendly, thanks to CSS Grid. 
@@ -22,7 +43,6 @@ We can also take advantage of "columns" and "rows" as seen below.
 
 ### Todo
 - Remove all PX and replace them with EMs or VHs
-- Fix the Grid-row system in it
 
 ### Version
 Current version is [0.1.2.](https://github.com/eync/superbro/releases/tag/v0.1.2)

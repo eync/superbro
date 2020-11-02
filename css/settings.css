@@ -1,11 +1,12 @@
 /*
-* SuperBro version 0.1.2
+* SuperBro version 0.1.3
 * Copyright 2019-2020, Sanjiv Rana
 * www.superbro.dev
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
-* Last update: 24-aug-2020
+* Last update: 02-nov-2020
 */
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
 
@@ -27,23 +28,28 @@ ol, ul {list-style: none; }
         --site-size: 75em; /* about 1200px */
         --columns:; /* default value is 12, leave it empty if you want to keep 12 columns setting */
 
+        /* background color */           
+        --background-main: var(--white);
+
         /*	=========== FONT(s) ==========  */
         --font-main:'Montserrat', sans-serif;
         --font-alt:'Source Code Pro';
         --font-default:sans-serif;
 
         /*	=========== PRIMARY COLORS ==========  */ 
-            /* FONT COLOR(s) */
-            /* you could define here for each tag line the color you would like to use */
-
-        /* background color */           
-        --background-main: var(--white);
+        /* FONT COLOR(s) */
+        /* you could define here for each tag line the color you would like to use */
+        --default-font-color:var(--black-alt);
 
         /* LINK COLOR(s) */
         --alink:#ED217C;
         --alink-hover:rgb(250, 25, 126);
         --alink-active:var(--alink);
         --alink-visited:var(--alink);
+
+        --alink-menu:rgb(212, 250, 25);
+        --alink-menu-hover:var(--alink);
+        --alink-menu-active:var(--alink);
         /* CUSTOM COLORS */
         /* add below your own specific colors // */
         --bqg: #b3b3b3;		
@@ -120,7 +126,7 @@ html {
 body {
 	font-family: var(--font-main);
 	background: var(--background-main);
-	color:var(--black);
+	color:var(--default-font-color);
 	font-size: calc(var(--text-base-value));
 	line-height: var(--body-line-height);
   margin: 0 auto;
@@ -157,7 +163,7 @@ a:hover, a:focus { color: var(--alink-hover); }
 a:visited { color: var(--alink-visited); }
 a:active { color: var(--alink-active); }
 
-a.button, button {
+a.button, button, input.button {
     display: inline-block;
     height: 38px;
     padding: 0 30px;
@@ -309,3 +315,53 @@ td:first-child {
 th:last-child,
 td:last-child {
   padding-right: 0; }
+
+
+/*	&& Menu
+	=======================*/
+  .sb-menu{
+    display:grid;
+    grid-template-columns: repeat(12, minmax(1em, auto));
+      width: 100%;
+      height: 3.5em;
+    line-height: 3.5em;
+      text-align: center;
+      font-family: sans-serif;
+    background-color: #9c9c9c;
+    height:100%;
+  }
+  .sb-menu .sb-logo {
+    grid-column-start: 1;
+    width: auto;
+      color: var(--default-font-color);
+  }
+  .sb-menu .sb-logo p {
+    font-size: 1.2rem;
+      font-weight: 700;
+      padding: 1em 0;
+  }
+  .sb-menu nav {
+    grid-column: span 11;
+    height: 100%;
+    justify-self:right;
+  }
+  
+  .sb-menu nav ul li {
+      width: auto;
+    height: inherit;
+    padding: 0 3.5em;
+      color: var(--default-font-color);
+    display: inline-block;
+    height:100%
+    
+  }
+  .sb-menu nav ul li a {
+    text-decoration: none;
+    color: var(--alink-menu);
+  }
+  .sb-menu nav ul li a:hover {
+    color: var(--alink-menu-hover);
+  }
+  .sb-menu nav ul li a.active {
+    color: var(--alink-menu-active);
+  }
