@@ -13,33 +13,19 @@
 ================================================== */
 
 /* Mobile Hand device sizing  */
-.span1 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-.span2 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-.span3 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-.span4 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-.span5 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-.span6 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-.span7 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-.span8 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-.span9 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-.span10 { grid-column: span 12; grid-row: span 1; width: 100%; }
-.span11 { grid-column: span 12; grid-row: span 1; width: 100%; }
-.span12 { grid-column: span 12; grid-row: span 1; width: 100%; }
+.span1, .span2, .span3,
+.span4, .span5, .span6, 
+.span7, .span8, .span9, 
+.span10, .span11, .span12
+    {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
 
 /* Tablet / other screens */
 @media (min-width: 420px) {
-	.span1 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-	.span2 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-	.span3 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-	.span4 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-	.span5 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-	.span6 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-	.span7 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-	.span8 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-	.span9 {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
-	.span10 { grid-column: span 12; grid-row: span 1; width: 100%; }
-	.span11 { grid-column: span 12; grid-row: span 1; width: 100%; }
-	.span12 { grid-column: span 12; grid-row: span 1; width: 100%; }
+    .span1, .span2, .span3,
+    .span4, .span5, .span6, 
+    .span7, .span8, .span9, 
+    .span10, .span11, .span12
+        {  grid-column: span 12 ; grid-row: span 1; width: 100%; }
 }
     
 /* Desktop or larger */
