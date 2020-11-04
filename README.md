@@ -45,7 +45,7 @@ We can also take advantage of "columns" and "rows" as seen below.
 - Remove all PX and replace them with EMs or VHs
 
 ### Version
-Current version is [0.1.2.](https://github.com/eync/superbro/releases/tag/v0.1.2)
+Current version is [0.1.3.](https://github.com/eync/superbro/releases/tag/v0.1.3)
 
 ### Examples
 Websites created with superbro boilerplate.
