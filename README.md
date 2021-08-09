@@ -1,5 +1,12 @@
-![superbro](https://raw.githubusercontent.com/eync/SuperBro.dev/master/img/superblogo.svg)
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![NPM](https://img.shields.io/npm/v/superbro.svg)](https://www.npmjs.com/package/superbro)
+<div align="center">
+  <img src="https://github.com/eync/SuperBro.dev/blob/master/img/superblogo.png">
+</div>
+<div align="center">
+    <img src="https://forthebadge.com/images/badges/built-with-love.svg">
+  <img src="https://forthebadge.com/images/badges/for-you.svg">
+  <img src="https://img.shields.io/npm/v/superbro.svg">
+  <img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg">
+</div>  
 
 # SUPERBRO
 Minimalistic Boilerplate
