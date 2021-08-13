@@ -12,7 +12,7 @@
 Minimalistic Boilerplate
 Made in mind of mobile-first orientation.
 
-It's quick and easy to start new projects with Superbro, since it offers many goods of HTML5 and CSS3 out of box. It's small library and supports all new browsers.
+It's quick and easy to start new projects with Superbro, since it offers many goods of HTML5 and CSS3 out of box. It's small library and supports all new browser versions.
 
 Visit [Superbro.DEV](https://superbro.dev) for better documentation.
 
@@ -53,7 +53,7 @@ We can also take advantage of "columns" and "rows" as seen below.
 - Remove all PX and replace them with EMs or VHs
 
 ## Version
-Current version is [0.1.3.](https://github.com/eync/superbro/releases/tag/v0.1.3)
+Current version is [0.1.4.](https://github.com/eync/superbro/releases/tag/v0.1.4)
 
 ## Examples
 Websites created with superbro boilerplate.
