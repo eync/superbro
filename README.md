@@ -15,6 +15,9 @@ Made in mind of mobile-first orientation.
 It's quick and easy to start new projects with Superbro, since it offers many goods of HTML5 and CSS3 out of box. It's small library and supports all new browser versions.
 
 Visit [Superbro.DEV](https://superbro.dev) for better documentation.
+### Try It!
+[![Run on Repl.it](https://repl.it/badge/github/eync/superbro)](https://repl.it/github/eync/superbro)  
+*By clicking link above, replit will generate fresh copy from git repo to your account.*  
 
 ## Features
 - CSS reset
